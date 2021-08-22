@@ -1,0 +1,34 @@
+.review-block {
+  background-color: rgba(85, 82, 82, 0.822);
+  box-shadow: 0 4px 8px 0 rgba(237, 241, 243, 0.836),
+    0 6px 20px 0 rgba(238, 240, 241, 0.19);
+  text-align: center;
+  position: fixed;
+  transform: (-50%, -50%);
+  top: 30%;
+  left: 20%;
+  border-radius: 25px;
+  width: 50rem;
+  height: 20rem;
+}
+
+.confirm-block {
+  background-color: rgba(85, 82, 82, 0.822);
+  box-shadow: 0 4px 8px 0 rgba(237, 241, 243, 0.836),
+    0 6px 20px 0 rgba(238, 240, 241, 0.19);
+  text-align: center;
+  position: fixed;
+  transform: (-50%, -50%);
+  top: 10%;
+  left: 20%;
+  width: 20rem;
+  border-radius: 25px;
+}
+
+#text {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  width: 49rem;
+  align-content: center;
+  background: transparent;
+}
