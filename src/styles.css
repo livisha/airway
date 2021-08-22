@@ -1,0 +1,135 @@
+.card {
+  height: 20px;
+  margin-top: 10rem;
+}
+
+.addicon {
+  color: black;
+}
+
+.each-flight {
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  background: url(https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  height: 100%;
+}
+
+.weather-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.weather-row > * {
+  grid-column: 2/ -2;
+}
+
+.weather-row > .full {
+  grid-column: 1/-1;
+}
+
+.weather-row .weather-grid {
+  display: grid;
+  height: 9.3rem;
+  padding-left: 1rem;
+  grid-template-columns: repeat(5, calc(50% - 40px));
+  grid-template-rows: minmax(150, 1fr);
+  overflow-x: scroll;
+  scrollbar-width: none;
+  grid-gap: 1px;
+}
+
+.weather-grid::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100%;
+}
+
+.weather-card {
+  height: 7.5rem;
+  opacity: 100%;
+  padding-left: 0.2rem;
+  background: linear-gradient(180deg, #ecdede 0%, #cce0ff 100%);
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px rgba(8, 35, 48, 0.24),
+    0px 4px 8px rgba(8, 35, 48, 0.16);
+  /* margin-bottom: 1.5rem; */
+}
+
+.App {
+  height: 100%;
+}
+
+.weather-block {
+  margin-top: 5rem;
+  margin-right: 2rem;
+  border-radius: 15px;
+  float: right;
+  top: -40px;
+  box-shadow: 0 4px 8px 0 rgba(68, 54, 54, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  width: 30%;
+  height: 300px;
+  color: #dbe7fc;
+  background: url(https://media0.giphy.com/media/3o6wrfjLCwd2f3G5wI/giphy.gif?cid=ecf05e472f6p2xakgfgwmu4ie6cpn96jpeiz0k8ki4ut3jtv&rid=giphy.gif&ct=g)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-image: linear-gradient(
+    to bottom,
+    #1336a6,
+    #284cb8,
+    #3a61ca,
+    #4c77db,
+    #5f8deb
+  ); */
+}
+
+.temp {
+  height: 15rem;
+  position: regular;
+}
+
+.profile-logout {
+  padding-right: 5.3rem;
+}
+
+.drop-button {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+  padding-top: 1.5rem;
+}
+
+.heading {
+  padding-left: 2rem;
+  font-family: "Righteous", cursive;
+  color: aliceblue;
+  -moz-text-decoration-color: black;
+  text-decoration-color: black;
+}
